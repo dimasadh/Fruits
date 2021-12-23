@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="25dp"
+            android:textSize="25dp"
+            android:text="BUAH APAKAH INI?"
+            android:id="@+id/tvTitle"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:id="@+id/ivImageSoal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvTitle"
+            android:background="@drawable/imageborder"
+            android:padding="2dp"
+            android:src="@mipmap/ic_banana"
+            />
+
+        <TextView
+            android:id="@+id/tvHasilJawab"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ivImageSoal"
+            android:layout_centerHorizontal="true"
+            android:text="HASIL"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/fruit1"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ivImageSoal"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tvHasilJawab"
+            android:id="@+id/btnNextQuestion"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ivImageSoal"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tvHasilJawab"
+            android:id="@+id/btnBeforeQuestion"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+<!--        <View-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_below="@id/tvHasilJawab"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@color/design_default_color_secondary"-->
+<!--            android:id="@+id/borderPage1"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/tvAnswerTitle"-->
+<!--            android:layout_below="@id/tvHasilJawab"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="JAWAB"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25dp"/>-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tvHasilJawab"
+            android:src="@drawable/ic_baseline_text_fields_24"
+            android:id="@+id/menuJawabText"
+            android:layout_margin="20dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tvHasilJawab"
+            android:layout_toRightOf="@+id/menuJawabText"
+            android:background="@color/fruit6"
+            android:layout_marginTop="20dp"
+            android:id="@+id/borderPage1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tvHasilJawab"
+            android:layout_toRightOf="@id/menuJawabText"
+            android:id="@+id/menuJawabImage"
+            android:src="@drawable/ic_baseline_camera_alt_24_orange"
+            android:layout_margin="20dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/answerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/menuJawabText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerFragment"
+            android:backgroundTint="@color/fruit5"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="jawab"
+            android:id="@+id/btnJawab"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

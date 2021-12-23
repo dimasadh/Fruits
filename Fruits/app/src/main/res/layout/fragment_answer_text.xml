@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".AnswerCameraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jawab"
+            android:textColor="@color/black"
+            android:id="@+id/tvTitleJawab"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_margin="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/tvTitleJawab"
+            android:layout_centerVertical="true"
+            android:background="@drawable/imageborder"
+            android:padding="15dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/etJawab"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
